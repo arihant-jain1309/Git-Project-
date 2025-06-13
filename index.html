@@ -5,53 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Arihant Jain - DevOps Engineer Portfolio</title>
   <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background-color: #f9f9f9;
+      background: #f3f7fa;
       color: #333;
     }
     header {
-      background-color: #2c3e50;
+      background: #1f2a44;
       color: white;
-      padding: 40px 20px;
       text-align: center;
+      padding: 40px 20px;
+    }
+    header img {
+      max-width: 300px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    h2 {
+      background: #2c3e50;
+      color: white;
+      padding: 12px 20px;
+      border-left: 6px solid #3498db;
+      margin: 40px 0 10px;
     }
     section {
       max-width: 900px;
-      margin: 20px auto;
+      margin: auto;
       background: white;
       padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    h1, h2 {
-      margin-top: 0;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    a {
-      color: #2c3e50;
-      text-decoration: none;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+      animation: fadeIn 1s ease-in-out;
     }
     .contact {
       margin-top: 10px;
       line-height: 1.6;
     }
-    .resume-btn {
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    a.resume-btn {
       display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
+      margin-top: 15px;
       background: #2980b9;
       color: white;
+      padding: 10px 18px;
       border-radius: 5px;
+    }
+    ul {
+      padding-left: 20px;
     }
     footer {
       text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
+      padding: 20px;
       color: #777;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -60,8 +81,9 @@
   <header>
     <h1>Arihant Jain</h1>
     <p>DevOps Engineer | Cloud & Automation Specialist</p>
+    <img src="A_digital_illustration_in_modern,_flat,_technology.png" alt="DevOps Engineer Illustration" />
     <div class="contact">
-      📞 +91 6232985895 | 📧 <a href="mailto:jainarihant1309@gmail.com">jainarihant1309@gmail.com</a> <br>
+      📞 +91 6232985895 | 📧 <a href="mailto:jainarihant1309@gmail.com">jainarihant1309@gmail.com</a><br>
       📍 Indore, India
     </div>
     <a href="resume.pdf" class="resume-btn" download>Download Resume</a>
@@ -70,44 +92,49 @@
   <section>
     <h2>About Me</h2>
     <p>
-      DevOps Engineer with 1 year of hands-on experience in building CI/CD pipelines, containerization, and managing cloud infrastructure on AWS. Proficient in Docker, Kubernetes, Jenkins, and Terraform. Adept at implementing Infrastructure as Code, automating deployments, and monitoring with Datadog and CloudWatch.
+      DevOps Engineer with 1 year of experience in building CI/CD pipelines, containerizing apps, and managing scalable AWS infrastructure. Skilled in Docker, Kubernetes, Terraform, Jenkins, and automation scripting. Passionate about building efficient, secure, and highly available systems.
     </p>
 
     <h2>Work Experience</h2>
     <h3>HisanLabs Pvt. Ltd., Pune <small>(May 2024 - Present)</small></h3>
     <ul>
-      <li>Implemented robust CI/CD pipelines using Jenkins, integrated with Git, Maven, and SonarQube.</li>
-      <li>Provisioned AWS infrastructure with Terraform including EC2, EKS, S3, RDS, IAM, and more.</li>
-      <li>Deployed containerized apps via Kubernetes (EKS) and managed resources using ConfigMaps, Secrets, PVCs, etc.</li>
-      <li>Used Datadog and CloudWatch for real-time monitoring, logging, and alerting.</li>
-      <li>Managed GitHub repositories and collaboration through branching strategies and PRs.</li>
+      <li>Built CI/CD pipelines in Jenkins integrated with Git, Maven, and SonarQube.</li>
+      <li>Provisioned AWS resources using Terraform (EC2, EKS, S3, RDS, IAM, etc.).</li>
+      <li>Managed microservices deployments via Kubernetes (EKS).</li>
+      <li>Monitored infrastructure using Datadog and CloudWatch.</li>
+      <li>Managed GitHub workflows, branching strategy, and code review processes.</li>
     </ul>
 
     <h3>Intern - HisanLabs Pvt. Ltd. <small>(Nov 2023 - Apr 2024)</small></h3>
     <ul>
-      <li>Built Dockerfiles for frontend/backend, containerized full-stack apps.</li>
-      <li>Assisted in Kubernetes deployments and Jenkins CI/CD setups.</li>
-      <li>Configured Datadog monitoring and created dashboards.</li>
-      <li>Automated system tasks using Bash scripts.</li>
+      <li>Built Docker images and containerized frontend/backend apps.</li>
+      <li>Helped deploy services to Kubernetes (pods, deployments, ingress).</li>
+      <li>Automated tasks with Bash scripts and participated in Agile sprints.</li>
     </ul>
 
-    <h2>Skills</h2>
+    <h2>Technical Skills</h2>
     <ul>
       <li><strong>Operating Systems:</strong> Linux (Ubuntu, RHEL, CentOS)</li>
-      <li><strong>Containerization:</strong> Docker, Docker Compose, Docker Swarm</li>
+      <li><strong>Cloud:</strong> AWS (EC2, S3, IAM, EKS, VPC, RDS, Lambda)</li>
+      <li><strong>CI/CD:</strong> Jenkins, GitHub Actions</li>
+      <li><strong>Containerization:</strong> Docker, Docker Compose</li>
       <li><strong>Orchestration:</strong> Kubernetes (EKS)</li>
-      <li><strong>Cloud Platforms:</strong> AWS (EC2, S3, EKS, VPC, IAM, ALB, Lambda)</li>
-      <li><strong>CI/CD Tools:</strong> Jenkins, GitHub Actions</li>
-      <li><strong>IaC Tools:</strong> Terraform, CloudFormation</li>
+      <li><strong>IaC:</strong> Terraform, CloudFormation</li>
       <li><strong>Monitoring:</strong> Datadog, CloudWatch</li>
       <li><strong>Scripting:</strong> Bash, Python</li>
-      <li><strong>Build & Code Quality:</strong> Maven, SonarQube</li>
       <li><strong>Version Control:</strong> Git, GitHub</li>
+      <li><strong>Code Quality:</strong> SonarQube</li>
     </ul>
+
+    <h2>Education</h2>
+    <p>B.Sc. Computer Science, Swami Vivekanand Vishwavidyalaya (2024)</p>
+
+    <h2>Hobbies</h2>
+    <p>Playing Chess, Cricket, and experimenting with new DevOps tools.</p>
   </section>
 
   <footer>
-    &copy; 2025 Arihant Jain | Portfolio built with 💻 + ☁️
+    &copy; 2025 Arihant Jain. Portfolio built with 💻 + ☁️
   </footer>
 
 </body>
