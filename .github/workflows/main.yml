@@ -35,4 +35,4 @@ jobs:
         aws-region: us-east-1
 
     - name: Deploy index.html and other files to S3
-      run: aws s3 sync . s3://git-project-first --delete --exclude ".git/*" --exclude ".github/*"
+      run: aws s3 sync . s3://portfolio-1111111111 --delete --exclude ".git/*" --exclude ".github/*"
